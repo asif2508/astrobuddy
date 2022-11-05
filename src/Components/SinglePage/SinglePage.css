@@ -61,6 +61,7 @@
     color: rgb(255, 255, 255) !important;
     background-color: #7007a3 !important;
     height: 3.4rem;
+    margin-bottom: .5rem;
 }.nav-item-box .btn-group .btn:hover,.main-content-section .btn-group .btn {
     color: blueviolet !important;
     background-color: #fff !important;
@@ -69,11 +70,12 @@
 }
 .nav-item-box .btn-group a.mail-icon-link {
     background: white;
-    width: 3.5rem;
-    height: 3.5rem;
-    padding: 0.9rem;
     border-radius: 50%;
     position: relative;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.3rem;
 }a.mail-icon-link img {
     width: 3.5rem;
     padding-right: 1rem;
@@ -85,7 +87,7 @@
 }a.mail-icon-link:hover img {
     transform: translate(5px, -6px);
 }main {
-    margin-top: 25rem;
+    margin-top: 20rem;
 }.main-content-section {
     position: relative;
     text-align: center;
@@ -168,229 +170,207 @@
     padding-left: 2.5rem!important;
 }
 
-@media (min-width:320px) and (max-width:480px){
-    .left-card-photo-wrapper img {
-        width: 37%;
-    }.navigation-bar.ms-5 {
-        margin-left: 6rem!important;
-    }
-    .nav-item-box .btn-group {
-        display: flex;
-        flex-direction: column;
-    }.nav-item-box .btn-group .btn {
-        margin-bottom: .4rem;
-    }.nav-item-box .btn-group .btn {
-        height: 2.5rem;
-        font-size: .8rem;
-    }.nav-item-box .btn-group a.mail-icon-link {
+/* Responsive code  */
+@media (min-width: 320px) {
+    .spa-section .right-photo-wrapper img:last-child {
+        width: 38%;
+        height: 26%;
+    }.right-photo-wrapper a {
         width: 3rem;
         height: 3rem;
-    }a.mail-icon-link img {
-        width: 3rem;
-        top: 23%;
-        left: 20%;
-    }.spa-section .right-photo-wrapper img:last-child {
-        width: 40%;
-        height: 23%;
-    }.right-photo-wrapper a {
-        width: 2.4rem;
-        height: 2.4rem;
-        right: 1%;
         top: 1%;
+        right: 0%;
     }.right-photo-wrapper a img {
-        width: 1.4rem !important;
-        height: 1.4rem !important;
-        right: 24%;
-        top: 21%;
-        left: 20%;
-    }main {
-        margin-top: 23rem;
+        width: 2rem !important;
+        height: 1.5rem !important;
+        right: 17%;
+        top: 26%;
+    }.nav-item-box .btn-group a.mail-icon-link {
+        width: 1rem;
+        height: 4rem;
+        padding: 2rem;
+    }a.mail-icon-link img {
+        width: 3.5rem;
+        padding-right: 1.3rem;
+        top: 27%;
+        left: 28%;
     }.main-logo-image img {
-        width: 62%;
+        width: 60%;
+        height: 45%;
         top: 33%;
-    }.main-logo-image img {
-        height: 46%;
-    }.main-content-section img {
-        top: -43%;
-        width: 44%;
-    }.nav-item-box .btn-group .btn:hover, .main-content-section .btn-group .btn {
-        font-size: 0.6rem;
+    }.main-content-section .btn-group.mt-4 button.btn {
+        font-size: 0.7rem;
+    }.main-content-section .btn-group.mt-4 button.px-5 {
+        padding-right: 0.5rem!important;
+        padding-left: 3rem!important;
     }.main-content-section .btn-group.mt-4 {
-        margin-top: -18rem !important;
-    }.nav-item-box .btn-group .btn.px-5 {
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
-    }button.btn.icon-bfr:before {
-        padding: 0.7rem;
-        top: 4%;
-    }.main-content-section .btn-group .btn.px-5{
-        padding-right: 1rem !important;
-        padding-left: 1.5rem !important;
-    }.main-content-section .btn-group .btn.py-3{
-        padding-top: .3rem !important;
-        padding-bottom: .3rem !important;
-    }.main-content-section .btn-group.mt-4 {
-        margin-top: 7rem !important;
-    }.main-content-section .btn-group .btn.me-4{
-        margin-right: 1rem;
-    }button.btn.magic-bfr:before {
-        width: 85%;
-        height: 47%;
-        top: -42%;
-        left: 9px;
+        margin-top: -14rem !important;
+    }
+    .nav-item-box .btn-group .btn {
         font-size: .6rem;
-        padding-bottom: 0.8rem !important;
-    }.live-container {
-        justify-content: unset;
+        margin-bottom: .5rem;
+    }.nav-item-box .btn-group .btn.px-5 {
+        padding-right: .3rem!important;
+        padding-left: .3rem!important;
+    }.navigation-bar.ms-5 {
+        margin-left: 0rem!important;
+    }.nav-item-box .btn-group .btn.px-5 {
+        padding-right: 1.3rem!important;
+        padding-left: 1.3rem!important;
+    }.nav-item-box .btn-group{
+        margin-left: 10rem;
+    }.nav-item-box .btn-group.pt-4 {
+        display: flex;
+        flex-direction: column;
     }.live-section {
-        width: 5rem;
+        width: 4rem;
         height: 5rem;
-        top: 1.6rem;
-        right: 37%;
+        top: -6rem;
+        left: 8rem;
+    }.live-section  .live-btn {
+        right: -38px;
+        font-size: 1rem !important;
+    }.live-section .live-btn.px-4 {
+        padding-right: 0.5rem!important;
+        padding-left: 1.5rem!important;
     }.live-section .live-btn.py-2 {
-        padding-top: .01rem!important;
-        padding-bottom: .01rem!important;
+        padding-top: .2rem!important;
+        padding-bottom: .2rem!important;
+    }.main-content-section img {
+        top: -1136%;
     }.live-btn:before {
         width: 2rem;
         height: 2rem;
-    }.live-section .live-btn.px-4 {
-        padding-right: 1rem!important;
-        padding-left: 1.4rem!important;
-    }.live-section .live-btn {
-        right: -55px;
+        left: -15%;
+    }button.btn.magic-bfr:before {
+        width: 85%;
+        height: 50%;
+        padding: 0rem;
+        top: -36%;
+        left: 11%;
+        font-size: .6rem;
+    }button.btn.icon-bfr:before {
+        width: 12%;
+        height: 48%;
+        padding: .9rem;
+        top: -14%;
+        left: -6%;
+    }.main-content-section .btn-group button.py-3 {
+        padding-top: .3rem!important;
+        padding-bottom: 0.3rem!important;
+    }.main-content-section .btn-group.mt-4 button.px-5 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
-}@media (min-width:481px) and (max-width:768px){
-    .left-card-photo-wrapper img {
-        width: 37%;
-    }
+ }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
     .nav-item-box .btn-group {
-        display: flex;
-        flex-direction: column;
-    }.nav-item-box .btn-group .btn {
-        margin-bottom: .4rem;
-    }.nav-item-box .btn-group .btn {
-        height: 2.5rem;
+        display: inline-block !important;
     }.spa-section .right-photo-wrapper img:last-child {
-        width: 27%;
-        height: 23%;
+        width: 40%;
+        height: 40%;
+    }main {
+        margin-top: 11rem;
+    }.main-logo-image img {
+        top: 27%;
+    }.main-content-section .btn-group.mt-4 {
+        margin-top: 6rem !important;
     }.right-photo-wrapper a {
-        width: 2.4rem;
-        height: 2.4rem;
-        right: 1%;
+        width: 4rem;
+        height: 4rem;
+        right: 0%;
         top: 1%;
     }.right-photo-wrapper a img {
-        width: 1.4rem !important;
-        height: 1.4rem !important;
-        right: 24%;
-        top: 21%;
-        left: 20%;
-    }.main-logo-image img {
-        height: 53%;
-        top: 27%;
-    }.main-logo-image img {
-        width: 56%;
-    }.main-content-section img {
-        top: -970%;
-        width: 36%;
-    }.main-content-section .btn-group.mt-4 {
-        margin-top: -13rem !important;
-    }.nav-item-box .btn-group .btn.px-5 {
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
-    }button.btn.icon-bfr:before {
-        width: 10%;
-        height: 40%;
-        padding: 0.9rem;
-        top: 4%;
-        left: 1%;
-    }.main-content-section .btn-group .btn.px-5{
-        padding-right: 1rem !important;
-        padding-left: 2rem !important;
-    }.main-content-section .btn-group .btn.py-3{
-        padding-top: .3rem !important;
-        padding-bottom: .3rem !important;
-    }.main-content-section .btn-group.mt-4 {
-        margin-top: -11rem !important;
+        right: 18%;
+        top: 28%;
+    }.main-content-section .btn-group .btn.px-5 {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
+    }.main-content-section .btn-group .btn.py-3 {
+        padding-top: .5rem!important;
+        padding-bottom: 0.5rem!important;
     }button.btn.magic-bfr:before {
-        width: 69%;
-        height: 46%;
-        top: -26%;
-    }.live-container {
-        justify-content: unset;
+        font-size: 0.5rem;
     }.live-section {
-        width: 6rem;
-        height: 6rem;
-        top: -4.4rem;
-        right: 40%;
+        width: 5rem;
+        height: 5rem;
+        top: -2rem;
     }.live-section .live-btn.py-2 {
         padding-top: .1rem!important;
         padding-bottom: .1rem!important;
+    }.live-section .live-btn.px-4 {
+        padding-right: 0.5rem!important;
+        padding-left: 1.5rem!important;
     }.live-btn:before {
         width: 2.3rem;
         height: 2.3rem;
-        left: 0%;
+        left: -21%;
     }
+ }
 
-}@media (min-width:769px) and (max-width:1023px){
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .spa-section .right-photo-wrapper img:last-child {
-        width: 50%;
-        height: 44%;
-    }.left-card-photo-wrapper img {
-        width: 28%;
-    }.right-photo-wrapper a{
-        right: 2%;
-        width: 4rem;
-        height: 4rem;
-    }.right-photo-wrapper a img{
-        right: 15%;
+        width: 37%;
+        height: 45%;
+    }.nav-item-box .btn-group {
+        display: inline-block !important;
     }
-    .nav-item-box .btn-group {
-        display: flex;
-        flex-direction: column;
-    }.nav-item-box .btn-group .btn {
-        margin-bottom: .4rem;
-    }.nav-item-box .btn-group .btn {
-        height: 2.5rem;
-    }.main-content-section img {
-        position: absolute;
-        top: 0%;
-        left: -2%;
-        width: 38%;
-    }.main-content-section .btn-group.mt-4 {
-        margin-top: 23rem !important;
-    }.main-logo-image img {
-        position: absolute;
-        width: 46%;
-        height: 40%;
-        top: 42%;
-        left: 26%;
-    }.main-content-section .btn-group .btn.py-3 {
-        padding-top: 0.4rem!important;
-        padding-bottom: 0.4rem!important;
-    }.main-content-section .btn-group .btn.px-5 {
-        padding-right: 1rem!important;
-        padding-left: 2.3rem!important;
-    }button.btn.icon-bfr:before{
-        top: 0;
-        padding: 1rem;
-    }button.btn.magic-bfr:before{
-        width: 64%;
-        height: 35%;
-        padding: 0rem;
+    .nav-item-box .btn-group .btn.me-4 {
+        margin-right: 0.9rem!important;
+    }main {
+        margin-top: 14rem;
     }.live-section {
+        position: absolute;
         width: 8rem;
         height: 8rem;
-        top: -9rem;
-    }.live-section .live-btn.py-2 {
-        padding-top: 0.2rem!important;
-        padding-bottom: 0.2rem!important;
-    }.live-btn:before {
-        width: 2.5rem;
-        height: 2.5rem;
-        left: -5%;
-        border-radius: 2rem;
+        top: -5rem;
+    }.main-logo-image img {
+        top: 25%;
+    }.main-content-section .btn-group .btn.py-3 {
+        padding-top: 0.6rem!important;
+        padding-bottom: .6rem!important;
+    }.main-content-section .btn-group .btn.px-5 {
+        padding-right: 1rem!important;
+        padding-left: 3rem!important;
     }
+ }
 
-}@media (min-width:1024px) and (max-width:1400px){
-}@media (min-width:1401px){
-}
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .spa-section .right-photo-wrapper img:last-child {
+        width: 31%;
+        height: 48%;
+    }.nav-item-box .btn-group .btn.px-5 {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
+    }.nav-item-box .btn-group .btn.me-4 {
+        margin-right: 0.9rem!important;
+    }.nav-item-box .btn-group {
+        display: inline-block !important;
+    }.live-section{
+        top: -10rem !important;
+    }.main-content-section .btn-group .btn.py-3 {
+        padding-top: 0.6rem!important;
+        padding-bottom: .6rem!important;
+    }.main-content-section .btn-group .btn.px-5 {
+        padding-right: 1rem!important;
+        padding-left: 3rem!important;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    main {
+        margin-top: 22rem;
+    }.main-content-section img {
+        left: -1%;
+    }
+ }
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    main {
+        margin-top: 23rem;
+    }
+ }
